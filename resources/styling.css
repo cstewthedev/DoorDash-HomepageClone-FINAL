@@ -7,6 +7,8 @@ body {
   width: 100%; 
   height: auto; 
   font-family: sans-serif;
+  overflow: hidden;
+  max-height: 655px;
 }
 
 .image-container img {
@@ -15,7 +17,7 @@ body {
   width: 100%;
   display: block;
   max-width: 1920px;
-  overflow-y: clip;
+  z-index: 0;
 }
 
 
@@ -26,19 +28,25 @@ body {
   width: 11.5%;
   max-width: auto;
   margin: -20px;
+  z-index: 1;
+}
+
+.button {
+  z-index: 1;
 }
 
 .overlay-text {
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   font-family: 'TTNorms', system-ui, sans-serif;
-  font-size: 45px;
+  font-size: 44px;
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.01em;
   padding: 10px 20px;
   border-radius: 5px;
   text-align: center;
+  z-index: 1;
 }
