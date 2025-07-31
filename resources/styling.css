@@ -21,7 +21,7 @@ body {
 }
 
 
-.logo {
+.banner {
   position: absolute;
   top: 107px;
   left: 867px;
@@ -31,22 +31,78 @@ body {
   z-index: 1;
 }
 
-.button {
-  z-index: 1;
+.signin-button {
+  position: absolute;
+  width: 59px;
+  height: 20px;
+  left: 855px;
+  bottom: 137px;
+  background-color: #d91400ff;
+  color: white;
+  font-family: 'TTNorms', system-ui, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 19px;
+  border-radius: 9999px;
+  padding: 10px 12px 10px 12px;
+  text-decoration: none;
+  text-align: center;
+  justify-content:start;
+}
+
+.signin-button:hover {
+  cursor: pointer;
+}
+
+.signup-button {
+  position: absolute;
+  width: 67px;
+  height: 20px;
+  left: 945px;
+  bottom: 137px;
+  background-color: white;
+  color: #606060ff;
+  font-family: 'TTNorms', system-ui, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 19px;
+  border-radius: 9999px;
+  padding: 10px 12px 10px 12px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.signup-button:hover {
+  cursor: pointer;
 }
 
 .overlay-text {
   position: absolute;
-  top: 45%;
-  left: 50%;
+  top: 32.55%;
+  left: 49.55%;
   transform: translate(-50%, -50%);
   color: white;
   font-family: 'TTNorms', system-ui, sans-serif;
-  font-size: 44px;
-  font-weight: 700;
-  letter-spacing: 0.01em;
+  font-size: 42px;
+  font-weight: 800;
+  letter-spacing: -1px;
   padding: 10px 20px;
   border-radius: 5px;
   text-align: center;
   z-index: 1;
+}
+
+.textbox {
+  position: absolute;
+  top: 340px;
+  left: 750px;
+  
+  
+}
+
+input[type="text"] {
+  height: 55px;
+  padding-right: 235px;
+  border-radius: 32px;
+  border: none;
 }
