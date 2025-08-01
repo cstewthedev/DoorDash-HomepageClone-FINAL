@@ -1,72 +1,49 @@
-body {
-  margin: 0;
+.image-container {
+  position: relative;
+  width: 100%; 
+  height: auto; 
+  font-family: sans-serif;
+  overflow: hidden;
+  max-height: 655px;
 }
 
-* {
-  box-sizing: border-box;
+.image-container img {
+  position: relative;
+  top: -105px;
+  width: 100%;
+  display: block;
+  max-width: 1920px;
+  z-index: 0;
 }
 
-h1 {
-  margin: 0;
-}
-
-.hero {
-  flex-direction: column;
-  background-image: url("/resources/images/doordash-header.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 71vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-}
 
 .banner {
   position: absolute;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.banner img {
-  position: relative;
-  display: flex;
-  left: 5%;
-  margin-top: -20px;
-  justify-content: center;
-  width: 225px;
-}
-
-a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.ctn-btns-banner {
-  display: flex;
-  align-items: center;
-  width: 180px;
-  justify-content: space-between;
-  margin-right: 28px;
-  margin-bottom: 30px;
+  top: 107px;
+  left: 867px;
+  width: 11.5%;
+  max-width: auto;
+  margin: -20px;
+  z-index: 1;
 }
 
 .signin-button {
-  width: 81.53px;
-  height: 40px;
+  position: absolute;
+  width: 59px;
+  height: 20px;
+  left: 855px;
+  bottom: 137px;
   background-color: #d91400ff;
   color: white;
   font-family: 'TTNorms', system-ui, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 19px;
-  border-radius: 30px;
+  border-radius: 9999px;
+  padding: 10px 12px 10px 12px;
   text-decoration: none;
   text-align: center;
+  justify-content:start;
 }
 
 .signin-button:hover {
@@ -74,16 +51,21 @@ a {
 }
 
 .signup-button {
-  width: 90px;
-  height: 40px;
+  position: absolute;
+  width: 67px;
+  height: 20px;
+  left: 945px;
+  bottom: 137px;
   background-color: white;
   color: #606060ff;
   font-family: 'TTNorms', system-ui, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 19px;
-  border-radius: 30px;
+  border-radius: 9999px;
+  padding: 10px 12px 10px 12px;
   text-decoration: none;
+  text-align: center;
 }
 
 .signup-button:hover {
@@ -106,13 +88,13 @@ a {
   z-index: 1;
 }
 
-.address-box {
+ .address-box {
   display: flex;
-  position: relative;
-  top: 7%;
-  left: 39%;
+  position: absolute;
   align-items: center;
   background-color: white;
+  top: 52%;
+  left: 39%;
   border-radius: 30px;
   height: 56px;
   width: 408px;
@@ -123,16 +105,16 @@ a {
   display: flex;
   justify-content: center;
   text-decoration: none;
-  padding-right: 32%;
 }
 
 .textbox input[type="text"] { 
+  /* padding: 16px 95px 16px 0px; */
+  border: 1px black solid;
   line-height: 23px;
-  width: 250px;
+  width: 50%;
   font-size: 15px;
   font-weight: 500;
   font-family: 'TTNorms', system-ui, sans-serif;
-  border: white;
 }
 
 .textbox input::placeholder {
@@ -145,19 +127,13 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 35px;
 }
 
-.bi::before {
+.textbook i {
   position: relative;
-  left: 20px;
-  font-size: 18px;
-  color: gray;
-}
-
-.address-button {
-  position: absolute;
-  color: red;
-  width: 30px;
-  height: 40px;
+  top: 50%;
+  left: 17px;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 20px;
 }
